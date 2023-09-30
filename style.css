@@ -1,36 +1,126 @@
-.cont{
-  width: 500px;
-  height: 300px;
-  background-color: aqua;
-  border: 2px solid black;
-  border-radius: 10px;
+*{
+  text-align: center;
+
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  margin: 2px;
+  padding: 2px;
+  font-size: 25px;
+}
+button{
+  background-color: rgb(255, 230, 0);
+  border: none;
+  color: black;
+  border-radius: 20px;
+
+  padding: 5px 32px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+  cursor: pointer;
+}
+
+button:hover{
+  transition: 1s ease-in-out 0s;
+  box-shadow: 5px 5px 5px black;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-color: rgb(255, 230, 0);
+  }
+  50%{
+    background-color: rgb(255, 208, 0);
+  }
+  100%{
+    background-color: rgb(250, 192, 2);
+  }
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+hr{
+
+  height: 2px;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+}
+
+.container{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 230, 0);
   display: flex;
+  flex-wrap: wrap;
+  
+
   justify-content: center;
   align-items: center;
+
+  
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
+
+.box{
+  width: 220px;
+  height: 300px;
+  border: 2px solid black;
+  background:  rgb(253, 173, 14);
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
   flex-wrap: wrap;
+  
+
+  justify-content: center;
+  align-items: center;
+  
+
+  
   
 }
 
-.cont:hover{
-  background-color: blue;
-  transition: 2s ease-in-out 0.5s;
-}
-.box{
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.inner{
+  width: 90%;
+  height: 60%;
+  background-color: rgb(255, 230, 0);
+  border: 2px solid black;
   border-radius: 10px;
-  margin: 10px;
-  text-align: center;
-  font-size: 70px;
-  font-family: Georgia, serif;
-  color: red;
 }
 
-.box:hover{
-  background: yellow;
-  transition: 1s ease-in-out 0.5s;
-  border-radius: 50%;
-  color: blue;
+
+@media (max-width: 800px){
+  .container{
+    height: 800px;
+  }
 }
+
+.price{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.price:hover{
+  color: white;
+  background-color: black;
+  transition:0.5s ease-in-out 1s;
+}
+
+
+
 
